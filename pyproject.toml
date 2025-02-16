@@ -1,0 +1,9 @@
+[project]
+name = "NAME"
+version = "1.0.0"
+authors = [
+    {name = "NAME", email = "EMAIL@YOURDOMAIN.com"},
+]
+description = "Python package description"
+readme = "README.md"
+requires-python = ">=3.9"
