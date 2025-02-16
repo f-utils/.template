@@ -7,19 +7,63 @@
 | $$_/|______/| $$| $$| $$  \ $$
 | $$          | $$| $$| $$  | $$
 | $$          | $$| $$| $$$$$$$/
-|__/          |__/|__/|_______/ 
+|__/          |__/|__/|_______/
+
+------------------------------------------
+Replace the above with the name of the lib. Use figlet font 'bigmoney-ne'.
+> https://patorjk.com/software/taag/#p=display&f=Big%20Money-ne&t=f-lib
+Altenativelly, install 'figlet' and font 'bigmoney-ne':
+> figlet: http://www.figlet.org/figlet-man.html
+> font: https://github.com/xero/figlet-fonts/blob/master/Big%20Money-ne.flf 
+------------------------------------------
 ```                       
 
 # About
 
-The `.template` directory contains sample files and templates that serve as a starting point for creating new components, configurations, or documentation within the project. These templates help ensure consistency in structure and style across the project, making it easier to onboard new contributors and maintain best practices. Use these files as references or building blocks when expanding your project.
+`f-{lib}` is the  `f-utils` lib that does something.
+- website: [futils.org/libs/f-{lib}](https://futils.org/libs/f-{lib})
+- contact: [futils@gmx.ie](mailto:futils@gmx.ie)
+- discord: [coolab](https://discord.gg/waANUyCUGE)
 
-# What’s Included
+# Structure
 
-- **.gitignore**: Specifies the files and directories that Git should ignore. This helps prevent temporary files, build artifacts, and other non-essential items from being committed to the repository.
+```
+f_{lib}/
+  |-- __init__.py .............. import main.py
+  |-- main.py .................. import modules
+  `-- mods/
+       |-- module1.py .......... does something
+       |-- module2.py .......... does some other thing
+       `-- ... 
+```
 
-- **LICENSE**: Contains the open-source license for the project. This file outlines the terms under which the software can be used, modified, and distributed.
+# Install
 
-- **pyproject.toml**: Provides metadata and configuration for the Python project. It defines build system requirements, project details, and can be used to configure tools and dependencies in a standardized manner.
+The installation is from the branches `main` and `dev` of this repository.
 
-- **README.md**: Serves as the main documentation for the project. It typically includes an overview of the project, installation instructions, usage examples, and any other important information for users and contributors.
+- With `pip`:
+```bash
+# main branch
+/path/to/venv/bin/pip install git+https://github.com/f-utils/f-{lib}
+# dev branch
+/path/to/venv/bin/pip install git+https://github.com/f-utils/f-{lib}/tree/dev
+```
+
+# Usage
+
+The lib provides the class `{Lib}`. We suggest to import it as:
+
+```python
+from f_{lib} import {Lib} as {lib}
+```
+
+For more details, see [futils.org/libs/f-{lib}](https://futils.org/libs/f-{lib}).
+
+# Contributing
+
+- Open issues in [f-utils/.issues](https://github.com/f-utils/.issues).
+- Join our [Discord](https://discord.gg/waANUyCUGE) server.
+
+# License
+
+This lib is [licensed](./LICENSE) under `BSD 3-Clause`.
