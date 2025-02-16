@@ -49,6 +49,8 @@ The installation is from the branches `main` and `dev` of this repository.
 /path/to/venv/bin/pip install git+https://github.com/f-utils/f-{lib}/tree/dev
 ```
 
+For other installation methods, see [futils.org/install](https://futils.org/install).
+
 # Usage
 
 The lib provides the class `{Lib}`. We suggest to import it as:
