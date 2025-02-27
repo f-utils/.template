@@ -21,9 +21,6 @@ Altenativelly, install 'figlet' and font 'bigmoney-ne':
 # About
 
 `f-{lib}` is the  `f-utils` lib that does something.
-- website: [futils.org/libs/f-{lib}](https://futils.org/libs/f-{lib})
-- contact: [futils@gmx.ie](mailto:futils@gmx.ie)
-- discord: [coolab](https://discord.gg/waANUyCUGE)
 
 # Structure
 
@@ -56,7 +53,7 @@ For other installation methods, see [futils.org/install](https://futils.org/inst
 The lib provides the class `{Lib}`. We suggest to import it as:
 
 ```python
-from f_{lib} import {Lib} as {lib}
+from f_{lib} import {Lib}
 ```
 
 For more details, see [futils.org/libs/f-{lib}](https://futils.org/libs/f-{lib}).
